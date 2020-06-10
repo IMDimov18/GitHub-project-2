@@ -1,6 +1,8 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    char asdasd;
+    string asdasd;
 }
