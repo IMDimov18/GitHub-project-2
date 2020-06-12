@@ -275,7 +275,7 @@ void changeUsername(int& counter, PROJECT2* users)//You can change your username
 		cout << endl;
 		cout << "Enter your new username: ";
 		cin >> newUsername;
-
+		system("cls");
 		int userIndex = findUserByPassword(password, counter, users);
 		users[userIndex].username = newUsername;
 
@@ -300,6 +300,7 @@ void changePassword(int& counter, PROJECT2* users)//You can change your pasword 
 		cout << endl;
 		cout << "Enter your new password: ";
 		cin >> newPassword;
+		system("cls");
 
 		while (!checkPassword(newPassword))
 		{
@@ -340,11 +341,9 @@ bool subMenu(int& counter, PROJECT2* users, int user, string username) //SubMenu
 		return 0;
 		break;
 	case 3:changePassword(counter, users);
-		return 0;
 		break;
 
 	case 4:changeUsername( counter, users);
-		return 0;
 		break;
 
 	case 9: return 0;
